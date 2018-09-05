@@ -18,17 +18,29 @@ https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
 
 ## AMD/Intel
 
-Linux users with AMD or Intel graphics cards should install recent versions of Mesa and LLVM through this repository: https://launchpad.net/~paulo-miguel-dias/+archive/ubuntu/mesa
+Linux users with AMD or Intel graphics cards should install recent versions of Mesa and LLVM through this repository: 
+#Ubuntu 18.04 (Bionic)
+https://launchpad.net/~paulo-miguel-dias/+archive/ubuntu/mesa
 
 ```
 sudo add-apt-repository ppa:paulo-miguel-dias/mesa
 sudo apt dist-upgrade
 sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
 ```
+#Ubuntu 16.04 (Xenial)
+https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers/
+
+```
+sudo add-apt-repository ppa:oibaf/graphics-drivers
+sudo apt dist-upgrade
+sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
+```
 
 Provide your user password when requested and reboot after the last command completes to ensure the driver has updated correctly.
 
-In addition, AMD users that want to play VR games should also add this repository: https://launchpad.net/~kisak/+archive/ubuntu/steamvr4pk
+In addition, AMD users that want to play VR games should also add this repository: 
+#Ubuntu 18.04 (Bionic) only
+https://launchpad.net/~kisak/+archive/ubuntu/steamvr4pk
 
 ```
 sudo add-apt-repository ppa:kisak/steamvr4pk
